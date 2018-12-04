@@ -2,27 +2,20 @@
 <html>
 <head>
 <style>
-html {
-	background-color:black
+body, html {
+height: 100%;
+margin: 0;
 }
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+.Bakgrunn {
+background-image: url("Bakgrunn.jpeg");
+height: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: sticky;
+filter: blur(2.5px);
+-webkit-filter: blur (2.5px);
+
 }
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-  }
-  
 .button {
 	background-color: aqua;
 	border: none;
@@ -35,7 +28,8 @@ html {
 }
 .topnav {
     overflow: hidden;
-    background-color:gray
+    background-color:lightgray;
+    position: sticky;
 }
 
 .topnav a {
@@ -49,7 +43,7 @@ html {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: darkgray;
     color: black;
 }
 
@@ -80,17 +74,58 @@ html {
         border: 1px solid #ccc;
     }
 }
+
+Header {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate: (-50%, -50%);
+color: white;
+text-align: center;
+}
+.h1 {
+color: white;
+text-align: center;
+text-transform: uppercase;
+margin: o;
+font-size: 10rem;
+white-space: nowrap;
+}
+
+.p {
+margin: 0;
+font-size: 1,5rem;
+}
+
 </style>
 </head>
 <title>Under konstruksjon </title>
 <body>
+
 <div class="topnav">
    <a class="active" href="index.html">Hjem</a>
   <a href="Info.html">Info</a>
-  <a href="Kontakt.html">Kontakt</a>
+  <a href="#contact">Kontakt</a>
   <a href="Javascript.html">Tallgenerator</a>
+  <a href="Memes.html">Memes</a>
   <input type="text" placeholder="Search..">
 </div>
+
+<div class="Bakgrunn"></div>
+
+
+<header>
+<h1>Test</h1>
+<p>Test</p>
+
+
+
+
+
+
+
+
+</header>
 
 </body>
 <hmtl>
